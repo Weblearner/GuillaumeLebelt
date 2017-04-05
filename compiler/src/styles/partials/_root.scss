@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+    background: $dark2;
+    font-family: 'Lato', sans-serif;
+    color: $light;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+
+    &.loaded {
+        overflow: visible;
+        max-height: auto;
+    }
+
+    h1 {
+        font-family: 'Geomanist';
+    }
+
+    a {
+        color: $primaryDark;
+        text-decoration: none;
+        outline: 0;
+    }
+
+    > .app-wrapper {
+        width: 100%;
+        min-height: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    > .app-border {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        border: 15px solid $black;
+        box-sizing: border-box;
+        pointer-events: none;
+        z-index: 200;
+    }
+
+    .page-content {
+        position: relative;
+        padding: 80px 30px 0px 30px;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+}

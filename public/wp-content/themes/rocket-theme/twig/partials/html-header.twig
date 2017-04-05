@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- TITLE -->
+<title>
+    {% if wp_title %}
+        {{wp_title}} - {{site.name}}
+    {% else %}
+        {{site.name}}
+    {% endif %}
+</title>
+
+<!-- DECRIPTION -->
+<meta name="description" content="Rocket - Another ES6 Starter built to do good shit!" />
+
+<!-- FACEBOOK -->
+<meta property="og:url" content="http://rocket.theokleman.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Rocket" />
+<meta property="og:description" content="Another ES6 Starter built to do good shit!" />
+<meta property="og:image" content="{{site.theme.link}}/img/social.png" />
+
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Theo_KlMan" />
+<meta name="twitter:title" content="Rocket" />
+<meta name="twitter:description" content="Another ES6 Starter built to do good shit!" />
+<meta name="twitter:image" content="{{site.theme.link}}/img/social.png" />
+
+<!-- FAVICON -->
+<link rel="icon" href="{{site.theme.link}}/img/favicon.png" type="image/png">
+
+<!-- CSS -->
+<link href="{{site.theme.link}}/css/main.css" rel="stylesheet">
+
+{{function('wp_head')}}
